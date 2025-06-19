@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "bing-cn-mcp-server": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.cn/sse/ba6676de33e042"
+    },
+    "mcp-trends-hub": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.cn/sse/3fd71ee022c74f"
+    },
+    "local-math-server": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["server.py"]
+    },
+    "agentdocs-server": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["main.py"]
+    },
+    "rag-knowledge-base": {
+      "type": "stdio", 
+      "command": "python",
+      "args": ["rag_server.py"]
+    }
+  }
+}
